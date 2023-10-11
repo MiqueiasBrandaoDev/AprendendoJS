@@ -72,9 +72,12 @@ while(rep >= 0){
 //Replicar While para for
 document.write('<br><br>Replicar While para for:')
 for (let rep = 10; rep >= 0; rep -= 1) {//inicializa a variavel;Aplica a condição para a execução; Encremento para a logica
+    
+    if (rep == 5) {
+        break
+    }
     document.write("<br>" + "O valor da variável é:" + rep)
 }
-
 
 
 
