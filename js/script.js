@@ -79,7 +79,4 @@ for (let rep = 10; rep >= 0; rep -= 1) {//inicializa a variavel;Aplica a condiç
     document.write("<br>" + "O valor da variável é:" + rep)
 }
 
-
-
-
 document.write("</pre>")

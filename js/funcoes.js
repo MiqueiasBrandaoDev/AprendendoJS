@@ -14,5 +14,4 @@ function user(id, name) {
 function soma(n1, n2){
     return n1 + n2 //retorna o valor desejado
 }
-let i = soma(1,2)
-document.write(i)
+
