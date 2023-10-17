@@ -15,18 +15,18 @@
                 <p id="subtitle">Você precisa fazer o login para usar nossos serviços</p>
             </div>
             <div class="card-body">
-                <form action="" class="form-group mt-1">
+                <form class="form-group mt-1">
                     <label for="Email" class="form-label">Informe seu E-mail:</label>
                     <input type="text" class="form-control">
 
                     <label for="senha" class="form-label mt-3">Informe sua senha:</label>
                     <input type="text" class="form-control">
-                
-                    <button class="btn btn-primary container mt-4 text-">
-                        ENTRAR <i class="spinner-border spinner-border-sm ms-2 invisible"></i>
-                    </button>
-
+                    
                 </form>
+                
+                    <button id="btn-login" onclick="carregando();" class="btn btn-primary container mt-4 text-">
+                        ENTRAR <i id="loading" class="spinner-border spinner-border-sm ms-2 invisible"></i>
+                    </button>
             </div>
 
         </div>
