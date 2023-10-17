@@ -1,19 +1,11 @@
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(150, 150, 150) ;
+        background-image: linear-gradient(to right, rgb(86, 12, 76), rgba(16, 13, 115, 0.888));
 }
 
-.container {
-    
-    width: 80%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    padding: 5px;
+.btn-primary{
+        background-color: rgba(16, 13, 115, 0.888);
 }
 
 .card{
-    
+    background-color: rgb(201, 201, 201);
 }
