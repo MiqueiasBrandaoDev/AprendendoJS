@@ -1,17 +1,22 @@
-let minhaPromessa = new Promise((resolve, reject) =>{
-    let name = "Miqueias"
-    let idade = 27
-    if(name == "Miqueias" && idade == 27){
-        resolve("Usuário " + name + " encontrado")
+//criando uma promessa
+const minhaPromisse = new Promise((resolve, reject) => {
+    
+    // imagine que esse nome veio de uma requisição externa
+    const nome = "Miqudseias"
+
+    //condição se resolve
+    if(nome == "Miqueias"){
+        resolve("Usuário encontrado " + nome)
     }
+
+    //condição se reject
     else{
-        reject("O usuário não foi encontrado")
+        reject("Error 404")
     }
-
 })
 
-minhaPromessa.then(function(resolve){
-    console.log(resolve)
-}).catch((erro)=> {
-    console.log(erro)
-})
+//recebendo os dados para tratar
+minhaPromisse
+.then((data) => {return data.toLowerCase()})//then resolve - retorna o dado e trata
+.then((stringModificada) => {console.log(stringModificada)})//encadeamento de thens - usa os dados do then anterior
+.catch((err) => {console.log("Aconteceu um erro - " + err)})//then reject
