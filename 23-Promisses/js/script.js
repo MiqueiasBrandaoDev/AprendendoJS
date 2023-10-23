@@ -2,11 +2,11 @@
 const minhaPromisse = new Promise((resolve, reject) => {
     
     // imagine que esse nome veio de uma requisição externa
-    const nome = "Miqudseias"
+    const nome = "Miqueias"
 
     //condição se resolve
     if(nome == "Miqueias"){
-        resolve("Usuário encontrado " + nome)
+        resolve("Response 200")
     }
 
     //condição se reject
