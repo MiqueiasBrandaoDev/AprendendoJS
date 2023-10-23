@@ -20,3 +20,4 @@ minhaPromisse
 .then((data) => {return data.toLowerCase()})//then resolve - retorna o dado e trata
 .then((data) => {console.log("A resposta da requisição é: " + data)})//encadeamento de then - a resposta do then anterior
 .catch((err) => {console.log("Aconteceu um erro - " + err)})//then reject
+.finally(() => {console.log("Promisa finalizada")})//executa independente de reject ou resolve
