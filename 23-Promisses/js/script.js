@@ -15,13 +15,6 @@ const minhaPromisse = new Promise((resolve, reject) => {
     }
 })
 
-//recebendo os dados para tratar
-minhaPromisse
-    .then((data) => {return data.toLowerCase()})//then resolve - retorna o dado e trata
-    .then((data) => {console.log("A resposta da requisição é: " + data)})//encadeamento de then - a resposta do then anterior
-    .catch((err) => {console.log("Aconteceu um erro - " + err)})//then reject
-    .finally(() => {console.log("Promisa finalizada")})//executa independente de reject ou resolve
-
 
 //resolvendo todas as promessas com resolveAll e race
 const p1 = new Promise((resolve, reject) => {
@@ -43,6 +36,14 @@ const p3 = new Promise((resolve, reject) => {
     }, 3000);
 })
 
+
+//recebendo os dados para tratar
+minhaPromisse
+    .then((data) => {return data.toLowerCase()})//then resolve - retorna o dado e trata
+    .then((data) => {console.log("A resposta da requisição é: " + data)})//encadeamento de then - a resposta do then anterior
+    .catch((err) => {console.log("Aconteceu um erro - " + err)})//then reject
+    .finally(() => {console.log("Promisa finalizada")})//executa independente de reject ou resolve
+
 //o método aguarda todas as promises para retornar resolve ou reject
 Promise.all([p1, p2, p3]).then((data) => {console.log("Resolvida com .all: " + data)})
 
@@ -61,6 +62,6 @@ fetch(`https://api.clickup.com/api/v2/list/${listId}/task`, {
     .then((response) => {
         return response.json()
     })
-    .then((dataJson) => {
-        console.log(dataJson)
+    .then((data) => {
+        console.log(data)
     })
