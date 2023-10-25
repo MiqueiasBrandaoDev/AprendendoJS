@@ -1,3 +1,7 @@
 #tasks{
     width: 100vh;
 }
+
+.hide{
+    display: none;
+}
