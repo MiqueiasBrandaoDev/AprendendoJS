@@ -31,6 +31,7 @@ async function getUser(){
 
 //mostrar nome
 async function mostraNome(){
+    
     try {
 
         var mostraUser = await getUser()
@@ -100,8 +101,6 @@ async function mostraTaks(){
             newTemplate.classList.remove("hide")
 
             document.querySelector("#tasks").appendChild(newTemplate)
-
-            console.log(newTemplate)
 
         });
 
